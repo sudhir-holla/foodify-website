@@ -1,0 +1,13 @@
+@import "./swiper.css";
+
+:root {
+  --header-height: 4rem;
+}
+
+.heading {
+    @apply font-bold;
+}
+
+.heading .highlight {
+    @apply text-indigo-500;
+}

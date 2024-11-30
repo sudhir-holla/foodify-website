@@ -1,0 +1,22 @@
+{
+  "name": "foodify-website",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "workspaces": [
+    "base",
+    "app",
+    "admin"
+  ],
+  "dependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@iconify/json": "^2.2.137",
+    "eslint": "^8.52.0"
+  }
+}

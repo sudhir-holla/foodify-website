@@ -1,0 +1,23 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+.swiper-button-next, .swiper-button-prev {
+    @apply text-indigo-500;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="rgb(99,102,241)"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>');
+    display: block;
+    width: 24px;
+    height: 24px;
+    @apply -mr-8 -mt-12;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="rgb(99,102,241)"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>');
+    display: block;
+    width: 24px;
+    height: 24px;
+    @apply -ml-8 -mt-12;
+}

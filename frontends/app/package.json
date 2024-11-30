@@ -1,0 +1,22 @@
+{
+  "name": "@foodify-website/app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run compile-base && nuxt build",
+    "dev": "npm run compile-base && nuxt dev --https",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare",
+    "compile-base": "cd ../base && npm run postinstall"
+  },
+  "devDependencies": {
+    "nuxt": "^3.9.3",
+    "vue": "^3.4.14",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "qs": "^6.11.2"
+  }
+}
