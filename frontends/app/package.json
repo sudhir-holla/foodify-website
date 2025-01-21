@@ -16,6 +16,6 @@
   "dependencies": {
     "@nuxt/ui": "^2.12.3",
     "qs": "^6.11.2",
-    "@foodify-website/base": "file:../base"
+    "@foodify-website/base": "workspace:*"
   }
 }

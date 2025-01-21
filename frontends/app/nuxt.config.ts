@@ -1,6 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { defineNuxtConfig } from "nuxt";
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ["../base"],
@@ -18,3 +16,4 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxt/ui"],
 });
+})
