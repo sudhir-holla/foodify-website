@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ["../base"],
+
   components: {
     dirs: [
       {
@@ -14,6 +15,7 @@ export default defineNuxtConfig({
       },
     ],
   },
+
   modules: ["@nuxt/ui"],
+  compatibilityDate: "2025-01-21",
 });
-})

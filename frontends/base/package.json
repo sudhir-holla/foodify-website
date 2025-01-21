@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/kit": "^3.9.3",
     "@nuxtjs/google-fonts": "^3.1.3",
     "@unlazy/nuxt": "^0.10.4",
     "@vueuse/core": "^10.7.2",
