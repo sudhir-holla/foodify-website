@@ -3,20 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run compile-base && nuxt build",
-    "dev": "npm run compile-base && nuxt dev --https",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "start": "node .output/server/index.mjs",
-    "postinstall": "nuxt prepare",
-    "compile-base": "cd ../base && npm run postinstall"
+    "dev": "nuxi dev",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' nuxi build",
+    "generate": "nuxi generate",
+    "start": "nuxi preview"
   },
   "devDependencies": {
+    "@nuxt/kit": "^3.9.3",
     "nuxt": "^3.9.3",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "qs": "^6.11.2"
+    "@nuxt/ui": "^2.12.3",
+    "qs": "^6.11.2",
+    "@foodify-website/base": "workspace:*"
   }
 }
